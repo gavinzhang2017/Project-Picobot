@@ -1,0 +1,69 @@
+1. I put "survival_rate" and "mutation_rate" as parameters in my program.
+I arranged the first population of programs according to their fitness and
+then chose "popsize*survival_rate" to survive and mate.
+
+2. I allowed the surviving programs to mate by crossingover each surviving
+program with every other. Then I mutate "mutation_rate" of these programs.
+
+3. I tested arbitrary "survival_rate" and "mutation_rate"s. I decided to
+use a high mutation to keep diversity and use a low survival rate. I finally decided
+to use "survival_rate" = 0.1 and "mutation_rate" = 0.8.
+
+4. I discovered that the number of generations needed to get a satisfactory
+fitness is subject to randomness. However, I believe that if I run enough
+generations, I will eventually get a fitness > 0.9. (But due to the limited
+capabilities of my Macbook Air, I was not able to run many generations.)
+
+5. The best program scored a fitness of 96.33%. It is as the following.(For this
+program, I used a popsize of 200 and 20 generations.
+
+
+
+0 NExx -> W 0
+0 NxWx -> S 1
+0 Nxxx -> E 2
+0 xExS -> N 2
+0 xExx -> W 2
+0 xxWS -> E 2
+0 xxWx -> E 0
+0 xxxS -> N 2
+0 xxxx -> N 0
+1 NExx -> W 0
+1 NxWx -> S 4
+1 Nxxx -> S 1
+1 xExS -> N 1
+1 xExx -> N 4
+1 xxWS -> N 1
+1 xxWx -> E 1
+1 xxxS -> E 3
+1 xxxx -> S 1
+2 NExx -> W 2
+2 NxWx -> S 4
+2 Nxxx -> W 3
+2 xExS -> W 3
+2 xExx -> N 1
+2 xxWS -> N 3
+2 xxWx -> E 4
+2 xxxS -> E 4
+2 xxxx -> W 4
+3 NExx -> W 4
+3 NxWx -> E 0
+3 Nxxx -> W 0
+3 xExS -> W 2
+3 xExx -> N 4
+3 xxWS -> N 3
+3 xxWx -> E 0
+3 xxxS -> E 0
+3 xxxx -> W 4
+4 NExx -> W 4
+4 NxWx -> S 4
+4 Nxxx -> E 1
+4 xExS -> W 4
+4 xExx -> N 4
+4 xxWS -> E 1
+4 xxWx -> S 3
+4 xxxS -> W 1
+4 xxxx -> N 4
+
+                                                                     
+
